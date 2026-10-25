@@ -49,3 +49,31 @@ main {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 12px 20px;
+}
+
+.project-details dd {
+  margin: 0;
+}
