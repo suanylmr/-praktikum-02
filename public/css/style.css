@@ -1,9 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --bg: #8ab1eb;
   --text: #0a078d;
   --accent: #130b30;
 }
 body {
+  margin: 0;
   background-color: var(--bg);
   color: var(--text);
   font-family: Arial, sans-serif;
@@ -28,7 +35,17 @@ header {
 }
 
 main {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
   border: 2px solid var(--accent);
   border-radius: 10px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
