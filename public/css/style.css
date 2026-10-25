@@ -54,6 +54,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 
 .site-nav {
@@ -67,6 +68,11 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+@media (min-width: 40rem) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .project-details {
   display: grid;
@@ -76,4 +82,17 @@ main {
 
 .project-details dd {
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 40rem) {
+  .site-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
